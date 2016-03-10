@@ -1,0 +1,34 @@
+<ion-view title="Signup">
+    <ion-content overflow-scroll="true" padding="true" scroll="false">
+        <form  novalidate="novalidate" on-valid-submit="saveUser()" class="form_submit">
+            <ion-list>
+                <label class="item item-input">
+                    <input type="text" ng-model="user.fullName" placeholder="Full Name"  required="true">
+                  <i class="icon ion-alert-circled error"></i>
+                </label>
+              <label class="item item-input validated loginForminput border_bottom_input bgWhite">
+                @<input type="text" ng-model="user.userName" placeholder="User Name" required="true">
+                <i class="icon ion-alert-circled error"></i>
+              </label>
+                <label class="item item-input">
+                    <input type="email" ng-model="user.email" placeholder="Email" required="true">
+                  <i class="icon ion-alert-circled error"></i>
+                </label>
+                <label class="item item-input">
+                    <input type="password" ng-model="user.password" placeholder="Password" required="true">
+                  <i class="icon ion-alert-circled error"></i>
+                </label>
+                <label class="item item-input">
+                    <input type="tel" ng-model="user.phone" placeholder="Phone">
+                  <i class="icon ion-alert-circled error"></i>
+                </label>
+              <label class="item item-input">
+                <input type="text" required="true" placeholder="Address" ng-model="user.address" googleplace>
+                <i class="icon ion-alert-circled error"></i>
+              </label>
+
+            </ion-list>
+            <button type="submit" class="button button-royal button-outline button-block ">Sign up</button>
+        </form>
+    </ion-content>
+</ion-view>

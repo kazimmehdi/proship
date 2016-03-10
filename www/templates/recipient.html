@@ -1,0 +1,29 @@
+<ion-view title="Recipient">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Contact Info</div>
+            <div class="item item-body">
+                <form class="list">
+                    <label class="item item-input">
+                        <input type="text" placeholder="First Name" required="true" >
+                    </label>
+                    <label class="item item-input">
+                        <input type="text" placeholder="Last Name">
+                    </label>
+                    <label class="item item-input">
+                        <input type="tel" placeholder="Phone " required="true">
+                    </label>
+                  <label class="item item-input">
+                    <input type="email" ng-model="user.email" placeholder="Email" required="true">
+                    <i class="icon ion-alert-circled error"></i>
+                  </label>
+                  <label class="item item-input">
+                    <input type="text" required="true" placeholder="Address" ng-model="user.address" googleplace>
+                    <i class="icon ion-alert-circled error"></i>
+                  </label>
+                </form>
+            </div>
+        </div>
+        <a ui-sref="purple.packageDetails" class="button button-royal button-outline button-block ">Continue to Package Details</a>
+    </ion-content>
+</ion-view>

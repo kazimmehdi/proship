@@ -1,0 +1,22 @@
+<ion-view title="FedEx Package">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list" ng-controller="fedExPackageCtrl">
+            <ion-item class="item-thumbnail-left" ng-click="navigate()">
+                <img src="img/Zg2TgjY9SZuGlH6FwPzF_fedex_envelope.png">
+                <h2>FedEx Envelope</h2>
+                <p>9 - 1/2" x 12 - 1/2"</p>
+            </ion-item>
+            <ion-item class="item-thumbnail-left" ng-click="navigate()">
+                <img src="img/VZgO2AIsTb6y2aCkeh27_small box.jpg">
+                <h2>FedEx Small Box</h2>
+                <p>10-7/8" x 1-1/2" x 12-3/8"</p>
+            </ion-item>
+            <ion-item class="item-thumbnail-left" ng-click="navigate()">
+                <img src="img/WtrQ18VdTneBQt0G9M0b_large box.jpg">
+                <h2>FedEx Large Box</h2>
+                <p>8-3/4" x 7-3/4" x 11-5/16"</p>
+            </ion-item>
+            <ion-toggle toggle-class="toggle-royal" ng-checked="true">Do you want us to package?</ion-toggle>
+        </form>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view title="Schedule Pickup">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <h5>Year</h5>
+        <form class="list">
+            <label class="item item-select" name="Year">
+                <span class="input-label"></span>
+                <select>
+                    <option>2016</option>
+                </select>
+            </label>
+        </form>
+        <h5>Month</h5>
+        <form class="list">
+            <label class="item item-select" name="Month">
+                <span class="input-label"></span>
+                <select>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                </select>
+            </label>
+            <h5>Day</h5>
+            <label class="item item-select" name="Day">
+                <span class="input-label"></span>
+                <select>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                </select>
+            </label>
+        </form>
+        <h5>Time window</h5>
+        <form class="list">
+            <label class="item item-select">
+                <span class="input-label"></span>
+                <select>
+                    <option>08:00 AM - 10:00 AM</option>
+                    <option>10:00 AM - 12:00 PM</option>
+                    <option>12:00 PM - 02:00 PM</option>
+                    <option>02:00 PM - 04:00 PM</option>
+                    <option>04:00 PM - 06:00 PM</option>
+                </select>
+            </label>
+        </form>
+        <a ui-sref="deliveryOptions" class="button button-royal button-outline button-block ">Continue to Delivery Options</a>
+    </ion-content>
+</ion-view>

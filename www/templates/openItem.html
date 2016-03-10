@@ -1,0 +1,15 @@
+<ion-view title="Open Item">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <h5>Choose Category</h5>
+        <form class="list">
+            <ion-radio>Cell Phone</ion-radio>
+            <ion-radio>TV</ion-radio>
+            <ion-radio>Bicycle</ion-radio>
+            <label class="item item-input">
+                <input type="text" placeholder="Other item, description here">
+            </label>
+            <ion-toggle toggle-class="toggle-royal" ng-checked="true">Do you want us to package?</ion-toggle>
+          <a ui-sref="schedulePickup" class="button button-royal button-outline button-block " >Continue to Pickup Options</a>
+        </form>
+    </ion-content>
+</ion-view>

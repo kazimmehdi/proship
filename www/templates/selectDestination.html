@@ -1,0 +1,17 @@
+
+<ion-view title="Select Destination">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <form class="list" novalidate="novalidate" on-valid-submit="searchUser()" ng-controller="selectDestinationCtrl">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="@username, email, phone or name" ng-model="userName" required="true">
+              <i class="icon ion-alert-circled error"></i>
+            </label>
+
+        </form>
+        <div class="button-bar">
+            <a ui-sref="purple.packageDetails" class="button button-stable button-clear "></a>
+            <button class="button button-stable button-clear "></button>
+        </div>
+    </ion-content>
+</ion-view>
